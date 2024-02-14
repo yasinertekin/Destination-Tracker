@@ -1,0 +1,44 @@
+name: shared_preferences_case
+description: "A new Flutter project."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Cache
+  shared_preferences: ^2.2.2
+
+  # Core
+  equatable: ^2.0.5
+
+  # Code generation
+  json_annotation: ^4.8.1
+
+  # Routing
+  auto_route: ^7.8.4
+
+  # State management
+  provider: ^6.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting
+  very_good_analysis: ^5.1.0
+
+  # Code generation
+  build_runner: ^2.4.8
+  json_serializable: ^6.7.1
+  auto_route_generator: ^7.3.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
