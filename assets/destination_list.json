@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Paris",
+    "visited": false,
+    "visitCount": 0,
+    "id":1
+  },
+  {
+    "name": "Tokyo",
+    "visited": false,
+    "visitCount": 0,
+    "id":2
+  },
+  {
+    "name": "New York",
+    "visited": false,
+    "visitCount": 0,
+    "id":3
+  },
+  {
+    "name": "London",
+    "visited": false,
+    "visitCount": 0,
+    "id":4
+  },
+  {
+    "name": "Rome",
+    "visited": false,
+    "visitCount": 0,
+    "id":5
+  },
+  {
+    "name": "Sydney",
+    "visited": false,
+    "visitCount": 0
+  },
+  {
+    "name": "Dubai",
+    "visited": false,
+    "visitCount": 0,
+    "id":6
+  },
+  {
+    "name": "Istanbul",
+    "visited": false,
+    "visitCount": 0,
+    "id":7
+  },
+  {
+    "name": "Los Angeles",
+    "visited": false,
+    "visitCount": 0,
+    "id":8
+  },
+  {
+    "name": "Moscow",
+    "visited": false,
+    "visitCount": 0,
+    "id":9
+  }
+]
