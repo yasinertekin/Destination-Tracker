@@ -1,16 +1,25 @@
-# shared_preferences_case
+# Destination-Tracker
 
-A new Flutter project.
+Destination Tracker allows users to save the places they travel to in the phone's memory.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Save the places you travel to in the phone's memory.
 
-A few resources to get you started if this is your first Flutter project:
+- Add a description to the places you save.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Built With
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Flutter](https://flutter.dev/)
+- [Dart](https://dart.dev/)
+
+## Packages
+
+- State Management
+
+  - [Provider](https://pub.dev/packages/provider)
+
+- Caching
+  - [SharedPreferences](https://pub.dev/packages/shared_preferences)
+- Routing
+  - [AutoRoute](https://pub.dev/packages/auto_route)
