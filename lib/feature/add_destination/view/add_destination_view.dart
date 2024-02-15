@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences_case/feature/add_destination/mixin/add_destination_view_mixin.dart';
 import 'package:shared_preferences_case/feature/visited/view_model/visited_view_model.dart';
+import 'package:shared_preferences_case/product/core/constants/string_constants.dart';
 import 'package:shared_preferences_case/product/model/destination.dart';
 
 part 'widget/add_destination_app_bar.dart';
@@ -28,6 +29,8 @@ final class AddDestinationView extends StatelessWidget
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const _AddDestinationImage(),
+              const SizedBox(height: 30),
               CustomTextFormField(
                 controller: nameController,
               ),
@@ -48,6 +51,20 @@ final class AddDestinationView extends StatelessWidget
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+final class _AddDestinationImage extends StatelessWidget {
+  const _AddDestinationImage();
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Image.asset(
+        StringConstants.imgTrip,
       ),
     );
   }

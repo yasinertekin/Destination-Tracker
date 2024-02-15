@@ -14,4 +14,7 @@ final class StringConstants {
 
   /// App Title
   static const String appTitle = 'Shared Preferences Case';
+
+  /// Img Trip
+  static const String imgTrip = 'assets/img_trip.png';
 }
