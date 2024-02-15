@@ -13,6 +13,15 @@ Destination Tracker allows users to save the places they travel to in the phone'
 - [Flutter](https://flutter.dev/)
 - [Dart](https://dart.dev/)
 
+## Preview
+
+<p>
+    <img src="screenshots/add.png" width="19%"/>
+    <img src="screenshots/destinationlist.png" width="19%"/>
+    <img src="screenshots/visited.png" width="19%"/>
+  
+</p>
+
 ## Packages
 
 - State Management
