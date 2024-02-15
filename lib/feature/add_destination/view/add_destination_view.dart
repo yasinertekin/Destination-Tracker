@@ -5,9 +5,11 @@ import 'package:shared_preferences_case/feature/add_destination/mixin/add_destin
 import 'package:shared_preferences_case/feature/visited/view_model/visited_view_model.dart';
 import 'package:shared_preferences_case/product/core/constants/string_constants.dart';
 import 'package:shared_preferences_case/product/model/destination.dart';
+import 'package:shared_preferences_case/product/widget/custom_sized_box.dart';
 
 part 'widget/add_destination_app_bar.dart';
 part 'widget/add_destination_button.dart';
+part 'widget/add_destination_image.dart';
 part 'widget/custom_text_form_field.dart';
 
 @RoutePage()
@@ -26,15 +28,15 @@ final class AddDestinationView extends StatelessWidget
         key: globalKey,
         child: Padding(
           padding: const EdgeInsets.all(8),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
             children: [
+              const CustomSizedBox(),
               const _AddDestinationImage(),
-              const SizedBox(height: 30),
+              const CustomSizedBox(),
               CustomTextFormField(
                 controller: nameController,
               ),
-              const SizedBox(height: 30),
+              const CustomSizedBox(),
               CustomTextFormField(
                 controller: visitCountController,
                 textInputAction: TextInputAction.done,
@@ -42,7 +44,7 @@ final class AddDestinationView extends StatelessWidget
                 validatorText: 'Please enter a visit count',
                 keyboardType: TextInputType.number,
               ),
-              const SizedBox(height: 30),
+              const CustomSizedBox(),
               _AddDestinationButton(
                 globalKey: globalKey,
                 nameController: nameController,
@@ -51,20 +53,6 @@ final class AddDestinationView extends StatelessWidget
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-final class _AddDestinationImage extends StatelessWidget {
-  const _AddDestinationImage();
-
-  @override
-  Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(20),
-      child: Image.asset(
-        StringConstants.imgTrip,
       ),
     );
   }
